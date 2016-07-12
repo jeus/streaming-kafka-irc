@@ -16,7 +16,6 @@
         <artifactId>pircbot</artifactId>
         <version>1.5.0</version>
     </dependency>
-
     </dependencies>
     <name>streaming-kafka-IRC</name>
 </project>
