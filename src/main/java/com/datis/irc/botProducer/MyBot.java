@@ -46,7 +46,7 @@ public class MyBot extends PircBot {
         this.setName("jeus2");
         final Serializer<UserMessages> userMessageSer = new JsonPOJOSerializer<>();
         Properties props = new Properties();
-        props.put("bootstrap.servers", "172.17.0.11:9092");
+        props.put("bootstrap.servers", "172.17.0.13:9092");
         props.put("client.id", "DemoProducer");
 //        props.put("batch.size",150);//this for async by size in buffer
 //        props.put("linger.ms", 9000);//this for async by milisecond messages buffered
