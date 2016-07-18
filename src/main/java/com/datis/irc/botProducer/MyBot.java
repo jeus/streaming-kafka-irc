@@ -7,7 +7,7 @@ package com.datis.irc.botProducer;
 
 import com.datis.irc.pojo.JsonPOJODeserializer;
 import com.datis.irc.pojo.JsonPOJOSerializer;
-import com.datis.irc.pojo.UserMessages;
+import com.datis.irc.entity.UserMessages;
 import com.google.gson.Gson;
 import java.util.Date;
 import java.util.HashMap;
@@ -44,7 +44,7 @@ public class MyBot extends PircBot {
 //        this pr = new Producer("test1", true);
 //        pr.run();
         this.setName("jeus2");
-        final Serializer<UserMessages> userMessageSer = new JsonPOJOSerializer<>();
+        final JsonPOJOSerializer<UserMessages> userMessageSer = new JsonPOJOSerializer<UserMessages>();
         Properties props = new Properties();
         props.put("bootstrap.servers", "172.17.0.13:9092");
         props.put("client.id", "DemoProducer");
